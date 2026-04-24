@@ -7,12 +7,67 @@
     <title>CSS Exercise 02 - Form</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <main>
-      <!-- Start with the code from the HTML folder.
-      - Make sure to fix any issues in your HTML code.
-      - Delete all mentions of <br>s and style the line breaks with CSS. 
-      - Add classes to style the elements on the page. -->
+  <body class="form-page">
+    <main class="form-card">
+      <h1>Roth IRA Calculator</h1>
+
+      <form class="roth-form" action=".submitform">
+        <div class="form-group">
+          <label for="balance">Balance ($)</label>
+          <input type="text" name="balance" id="balance" />
+        </div>
+
+        <div class="form-group">
+          <label for="contribution">Annual Contribution ($)</label>
+          <input type="text" name="contribution" id="contribution" />
+        </div>
+
+        <fieldset>
+          <legend>Maximize contribution?</legend>
+
+          <div class="radio-options">
+            <div>
+              <input type="radio" name="maximize" id="yes" value="yes" />
+              <label for="yes">Yes</label>
+            </div>
+
+            <div>
+              <input type="radio" name="maximize" id="no" value="no" />
+              <label for="no">No</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="form-group">
+          <label for="rate">Expected rate of return (%)</label>
+          <input type="number" name="rate" id="rate" />
+        </div>
+
+        <div class="form-group">
+          <label for="age">Current age</label>
+          <input type="number" name="age" id="age" />
+        </div>
+
+        <div class="form-group">
+          <label for="retire">Retirement age</label>
+          <input type="number" name="retire" id="retire" />
+        </div>
+
+        <div class="form-group">
+          <label for="tax">Marginal tax rate (%)</label>
+          <input type="number" name="tax" id="tax" />
+        </div>
+
+        <div class="form-buttons">
+          <input type="submit" value="Calculate" />
+          <input type="reset" value="Reset" />
+        </div>
+
+        <p class="source-note">
+          This exercise is a simplified version of the Roth IRA Calculator at
+          <a href="https://calculator.net">Calculator.net</a>.
+        </p>
+      </form>
     </main>
   </body>
 </html>
