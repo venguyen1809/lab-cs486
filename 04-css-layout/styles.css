@@ -38,6 +38,7 @@ h1 {
   margin: 10px;
 }
 
+<<<<<<< HEAD
 .container {
   display: flex;
   justify-content: center; /* horizontal */
@@ -241,3 +242,10 @@ h1 {
       "footer footer";
   }
 }
+=======
+/* Exercise 02 - Flexbox */
+
+/* Exercise 03 - CSS Grid */
+
+/* Exercise 04 - CSS Grid Areas */
+>>>>>>> 8b2e92ef18eed0b10a825b5c9881d6b5b557c0e0
